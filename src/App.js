@@ -1,5 +1,10 @@
-function App() {
-    return <h1 className="text-blue-500">Hello</h1>
-}   
+import Header from "./components/Header";
 
+function App() {
+    return(
+        <div>
+           <Header />
+        </div>
+    );
+}
 export default App;
