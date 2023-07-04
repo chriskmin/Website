@@ -6,7 +6,7 @@ const Me = () => {
     const SOCIAL = [
         {
             id : 1,
-            link:"https://https://twitter.com/ChrisKMin1",
+            link:"https://twitter.com/ChrisKMin1",
             icon: <FaTwitter />,
         },
         {
@@ -20,14 +20,41 @@ const Me = () => {
             icon: <FaGithub/>,
         },
     ];
-  return  <section>
-    <h2>Chris Min</h2>
-    <h3>CS Student @ Boston University</h3>
-    <p>
+  return  <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
+    <h2 className="text-5xl text-blue-500 uppercase font-bold">Chris Min</h2>
+    <h3 className="py-3 text-2xl">CS Student @ Boston University</h3>
+    <p className="max-w-xl font-light text-gray-600">
         Hello! Welcome to my website! I'm currently a junior at Boston University studying computer science with a minor in business administration. 
         I'm currently interested in AI/ML and embedded systems so I am working on a couple projects regarding these interests.
         As for hobbies, I like to play basketball or lift, and so you'll often find me in the gym!
+
     </p>
+
+    <div className="py-2"></div>
+
+    <div>
+        <img 
+        src={img} 
+        alt="Me" 
+        className="w-60 h-60 md:w-72 md:h-72 object-cover rounded-xl" 
+        />
+        <a href=""></a>
+    </div>
+
+    <div className="flex justify-evenly py-8 lg:py-16 text-4xl w-full md:w-1/3 ">
+        {SOCIAL.map(({id, link, icon}) => (
+            <a 
+            href={link} 
+            key={id} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer duration-300 hover:text-blue-600"
+            >
+                {icon}
+            </a>
+        ))}
+    </div>  
+
   </section>;
 };
 
