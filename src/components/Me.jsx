@@ -37,7 +37,7 @@ const Me = () => {
   return  <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
     <h2 className="text-5xl text-blue-500 uppercase font-bold">Chris Min</h2>
     <h3 className="py-3 text-2xl">CS Student @ Boston University</h3>
-    <p className="max-w-xl font-light text-gray-600">
+    <p className="max-w-xl font-light text-gray-500">
         Hello! Welcome to my website! I'm currently a junior at Boston University studying computer science with a minor in business administration. 
         I'm currently interested in AI/ML and embedded systems so I am working on a couple projects regarding these interests.
         As for hobbies, I like to play basketball or lift, and so you'll often find me in the gym!
@@ -69,7 +69,7 @@ const Me = () => {
     </div>  
 
 
-    <div className="mt-10 down-arrow"> 
+    <div className="mt-5 down-arrow"> 
         <FaArrowDown className="text-gray-400 animate-bounce text-2xl"/>
 
     </div>
