@@ -21,7 +21,7 @@ const Me = () => {
         },
         {
             id : 4,
-            link:"/Chris Min's Resume.pdf",
+            link:"/Christopher Min Resume.pdf",
             icon: <FaFileAlt/>
         },
     ];
