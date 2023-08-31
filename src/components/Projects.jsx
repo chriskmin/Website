@@ -32,8 +32,13 @@ const Projects = () => {
     title="Projects"
     subtitle="These are the projects that I've worked on"
     > 
-      <div>
-
+      <div className='grid gap-8 lg:gap-14 lg:grid-cols-2'>
+        {projects.map(({id, image, title, github}) => 
+          <div>
+            <img src="" alt=""/> 
+            
+          </div>
+        )}
       </div>
     </Section>
   )
