@@ -6,19 +6,19 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      image: p1,
+      image: '',
       title: 'Music App',
       github: ''
     },
     {
       id: 1,
-      image: p1,
+      image: '',
       title: 'Music App',
       github: ''
     },
     {
       id: 1,
-      image: p1,
+      image: '',
       title: 'Music App',
       github: ''
     },
@@ -36,7 +36,7 @@ const Projects = () => {
         {projects.map(({id, image, title, github}) => 
           <div>
             <img src="" alt=""/> 
-            
+
           </div>
         )}
       </div>
